@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xd.myapplication.MainActivity">
+
+
+
+   <com.example.xd.myapplication.compoments.MyViewPager
+       android:id="@+id/viewpager"
+       android:layout_width="match_parent"
+       android:layout_weight="5"
+       android:layout_height="match_parent">
+
+   </com.example.xd.myapplication.compoments.MyViewPager>
+    <TableRow
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tab_list"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:text="list"/>
+        <TextView
+            android:id="@+id/tab_play"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="play"/>
+        <TextView
+            android:id="@+id/tab_net"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="net"/>
+    </TableRow>
+</LinearLayout>
